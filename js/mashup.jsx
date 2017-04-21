@@ -81,7 +81,7 @@ const Container = React.createClass({
 				<Body location={this.state.location} lat={this.state.lat} lng = {this.state.lng} mapData={this.state.mapData} />
 				<div className="footer">
 				    Created by: Jeff Sablack | 
-				    <a href="https://https://github.com/jsablack"><i className="fa fa-fw fa-github"></i></a>
+				    <a href="https://jsablack.github.io/"><i className="fa fa-fw fa-github"></i></a>
 				    <a href="https://www.linkedin.com/in/jeff-sablack-430aa09/"><i className="fa fa-fw fa-linkedin"></i></a>
 				    <a href="https://twitter.com/jsablack"><i className="fa fa-fw fa-twitter"></i></a>
 				</div>
@@ -114,7 +114,7 @@ const Header = React.createClass({
 		return (
 			<ul className="container">
 				<li className="item brand">
-					<a href="/api_mashup/">Hopefully it works</a>
+					<a href="/">Hopefully it works</a>
 				</li>
 				<li className="item">
 					<ul>
@@ -188,9 +188,9 @@ const SearchList = React.createClass({
 		var list = this;
 		if (this.props.mapData.hasOwnProperty("response") && this.props.mapData["response"]["venues"].length > 0 ){
 
-			var data = this.props.mapData["response"]["venues"].map(function(venue){
+			var data = this.props.mapData["response"]["venues"].map(function(venue, i){
 				return (
-					<ListItem placeName = {venue["name"]} location={venue["location"]}/>		
+					<ListItem key={i} placeName={venue["name"]} location={venue["location"]}/>		
 				);
 			});
 			return (
