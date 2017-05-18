@@ -2,7 +2,7 @@ var webpack = require('webpack');
 module.exports = {
 	entry: "./js/app.js",
 	output: {
-		filename: "./js/bundle.js"
+		filename: "./js/bundle1.js"
 	},
 	watch: true,
 	module: {

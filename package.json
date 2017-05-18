@@ -2,7 +2,7 @@
   "name": "final_project",
   "version": "1.0.0",
   "description": "",
-  "main": "bundle.js",
+  "main": "bundle1.js",
   "scripts": {
     "build": "webpack -p",
     "start": "webpack-dev-server --inline"
