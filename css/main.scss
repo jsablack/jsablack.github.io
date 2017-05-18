@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  background: #88499C;
+  background: #494e9c;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -27,7 +27,7 @@ body {
   list-style: none;
 }
 .item {
-  background: #88499c none repeat scroll 0 0;
+  background: #494e9c none repeat scroll 0 0;
   color: #ffffff;
   display: block;
   line-height: 80px;
@@ -55,7 +55,7 @@ body {
   align-self: flex-start;
   font-size: 26px;
   > a {
-    color: #FFC259;
+    color: #f9ff59;
     text-decoration: none;
     display: block;
   }
@@ -81,14 +81,14 @@ body {
   overflow: auto;
 }
 .body .searchResult .searchItem {
-  background: #FFC259;
+  background: #f9ff59;
   margin-bottom: 5px;
   padding: 4px 8px;
 }
 .body .searchResult .searchItem a {
   font-size: 18px;
   display: block;
-  color: #88499C;
+  color: #494e9c;
 }
 .body .searchResult .searchItem p.small {
   color: #808080;
@@ -146,7 +146,7 @@ body {
     flex-flow: column nowrap;
   }
   .item {
-    border-bottom: 1px solid #FFC259;
+    border-bottom: 1px solid #f9ff59;
     padding: 0;
     line-height: 44px;
     width: 100%;
